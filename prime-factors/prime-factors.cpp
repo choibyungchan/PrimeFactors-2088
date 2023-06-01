@@ -30,6 +30,17 @@ public:
 					}
 				}
 			}
+			else if (number == 9)
+			{
+				for (divisor = 2; number > 1; divisor++)
+				{
+					while (number % divisor == 0)
+					{
+						result.push_back(divisor);
+						number /= divisor;
+					}
+				}
+			}
 			else
 			{
 				result.push_back(number);
